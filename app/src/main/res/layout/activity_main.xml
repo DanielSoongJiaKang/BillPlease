@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="23sp"
+            android:layout_weight="1"
+            android:text="@string/amount"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_margin="20sp"
+            android:hint="Enter Amount"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            android:text="@string/pax"
+
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/pax"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:ems="10"
+            android:layout_margin="20sp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/numpax"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/svs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textOn="@string/svs"
+            android:textOff="@string/svs"/>
+        <ToggleButton
+            android:id="@+id/gst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textOn="@string/gst"
+            android:textOff="@string/gst"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            android:text="@string/discount"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/discount"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:ems="10"
+            android:layout_margin="20sp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/enterdiscount"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_bill"
+        android:layout_margin="23sp"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"/>
+
+        <TextView
+            android:id="@+id/totalbill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_margin="23sp"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_dark"/>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/each_pays"
+        android:layout_margin="23sp"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <TextView
+        android:id="@+id/textsplit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="23sp"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/bsplitpax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textOn="@string/split"
+            android:textOff="@string/split"/>
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/reset"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
